@@ -15,7 +15,6 @@ const App = () => {
   const handleClick = () => {
     dispatch(Change(Allquotes.length));
   };
-
   return (
     <div
       style={{ background: color }}
@@ -25,12 +24,12 @@ const App = () => {
         <div className="flex justify-center items-center flex-col">
           <div className="flex flex-row">
             <span className="text-3xl m-2 font-semibold">
-              {Allquotes[unique].quote}
+              {Allquotes[unique]?.quote}
             </span>
           </div>
         </div>
         <div className="flex flex-row justify-end items-center w-full p-8">
-          <span className="text-xl">-{Allquotes[unique].author}</span>
+          <span className="text-xl">-{Allquotes[unique]?.author}</span>
         </div>
 
         <button
