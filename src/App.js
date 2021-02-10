@@ -33,7 +33,7 @@ const App = () => {
         </div>
 
         <button
-          className="m-4 p-4 text-white rounded-sm outline-none"
+          className="m-4 p-4 rounded-sm outline-none"
           onClick={handleClick}
           style={{ background: `${color}` }}
         >
